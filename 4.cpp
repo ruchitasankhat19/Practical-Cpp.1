@@ -1,11 +1,32 @@
 #include <iostream>
-#include <climits>  // For INT_MIN and INT_MAX
-
 using namespace std;
 
 int main() {
-    cout << "Minimum value of int: " << INT_MIN << endl;
-    cout << "Maximum value of int: " << INT_MAX << endl;
+        int p,q,r;
+        int minimum,maximum;
 
-    return 0;
+        cout<<"Enter Three Numbers:"<<endl;
+        cin>>p>>q>>r;
+
+        if(a<=b&&a<=c) {
+                minimum=a;
+        } else if(b<=a&&b<=c) {
+                minimum=b;
+        }else{
+                minimum=c;
+        }
+
+        if(a>=b&&a>=c) {
+                maximum=a;
+        } else if(b>=a&&b>=c) {
+                maximum=b;
+        }else{
+                maximum=c;
+        }
+
+        cout<<"Minimum value is :"<<minimum<<endl;
+
+        cout<<"Maximum value is :"<<maximum<<endl;
+
+        return 0;
 }
